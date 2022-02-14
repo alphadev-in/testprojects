@@ -1,0 +1,26 @@
+
+yarn add @react-navigation/native
+yarn add react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view
+yarn add @react-navigation/bottom-tabs
+yarn add @react-navigation/stack
+yarn add react-native-vector-icons-> react-native link react-native-vector-icons -> cd ios pod install
+Custom fonts - https://medium.com/@mehrankhandev/ultimate-guide-to-use-custom-fonts-in-react-native-77fcdf859cf4
+react-native link - for fonts
+cd ios, pod install, cd ..
+yarn add react-native-dropdown-picker
+add pod 'IQKeyboardManager'  to ios pod file and install pod using pod install --no-repo-update
+yarn add react-native-sticky-parallax-header
+yarn add react-native-calendar-strip
+yarn add axios
+yarn add @react-native-async-storage/async-storage
+yarn add @react-native-firebase/app
+yarn add @react-native-firebase/messaging
+yarn add moment -> cd ios, pod install --no-repo-update, cd ..
+yarn add @react-native-community/geolocation -> cd ios, pod install --no-repo-update, cd ..
+    android=menifest.xml=   <!-- Define ACCESS_FINE_LOCATION if you will use enableHighAccuracy=true  -->
+                            <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+                            <!-- Define ACCESS_COARSE_LOCATION if you will use enableHighAccuracy=false  -->
+                            <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    ios= infoplist->        <key>NSLocationWhenInUseUsageDescription</key>
+                            <string>This app needs to get your location...</string>
+

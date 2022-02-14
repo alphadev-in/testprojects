@@ -1,0 +1,18 @@
+.tabs {
+  &.is-boxed {
+    margin-bottom: 0;
+    ul {
+      li {
+        a {
+          border-bottom: 2px solid #dbdbdb !important;
+          padding-top: 20px;
+          padding-bottom: 20px;
+        }
+        &.is-active a {
+          border-radius: 0;
+          color: #23a6f0;
+        }
+      }
+    }
+  }
+}

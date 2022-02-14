@@ -1,0 +1,69 @@
+.dropdown {
+  &.select-countries {
+    width: 100%;
+
+    .dropdown-trigger {
+      width: 100%;
+    }
+
+    .dropdown-menu {
+      min-width: inherit;
+      width: 100%;
+
+      .dropdown-content {
+        max-height: 150px;
+        overflow-y: auto;
+        padding-top: 0;
+
+        li {
+          height: 42px;
+          cursor: pointer;
+        }
+        li + li {
+          border-top: 1px solid #e4e4e4;
+          margin-top: 0;
+        }
+      }
+    }
+  }
+  &.select-image {
+    width: 100%;
+
+    .dropdown-trigger {
+      width: 100%;
+    }
+    .custom1 {
+      border: 1px solid #e7e7e7 !important;
+      box-sizing: border-box;
+      border-radius: 4px;
+      height: 39px;
+      background-color: white;
+    }
+    .custom2 {
+      border-radius: 4px;
+      height: 39px;
+      background-color: white;
+    }
+
+    .dropdown-menu {
+      min-width: inherit;
+      width: 100%;
+
+      .dropdown-content {
+        max-height: 150px;
+        overflow-y: auto;
+        padding-top: 0;
+        padding-bottom: 0;
+
+        li {
+          height: 42px;
+          cursor: pointer;
+        }
+        li + li {
+          border-top: 1px solid #e4e4e4;
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}

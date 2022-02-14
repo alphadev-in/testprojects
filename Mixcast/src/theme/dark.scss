@@ -1,0 +1,144 @@
+.buttonTheme {
+  background-color: #3e557a !important;
+  color: #ffffff !important;
+}
+.buttonTheme:hover {
+  /* background-color: #18212f !important; */
+  background-color: #18212f !important;
+  color: #6fb391 !important;
+}
+.activeButton {
+  background-color: #18212f !important;
+  color: #6fb391 !important;
+}
+.DashboardButton {
+  font-size: 20px !important;
+}
+.MuiPagination-root.pagination-primary .MuiPaginationItem-root.Mui-selected {
+  background: #3e5579 !important;
+  color: #fff !important;
+  border-color: #3e5579 !important;
+  box-shadow: none !important;
+}
+.MuiPagination-root .MuiPaginationItem-root {
+  color: #eeeeee;
+}
+.app-footer--opacity-bg {
+  background: #18212f !important;
+}
+.app-header {
+  background: #18212f !important;
+}
+.card-header {
+  border-bottom: 3px solid rgba(122, 123, 151, 0.6) !important;
+}
+.MuiButton-root.btn-outline-primary {
+  background: transparent !important;
+  color: #eeeeee !important;
+  border: #eeeeee solid 2px !important;
+}
+.avatar-icon {
+  box-shadow: 0 0 0 1px #fff !important;
+}
+.table-responsive-md {
+  padding: 10px !important;
+  background: #18212f !important;
+}
+.card-box {
+  border: none !important;
+}
+.divider {
+  height: 0px !important;
+}
+.card-header {
+  border-width: 0px !important;
+  border-bottom-width: 0px !important;
+}
+.MuiPaper-elevation1 {
+  box-shadow: none !important;
+}
+.table thead th {
+  border-bottom: none !important;
+  border-bottom: none !important;
+}
+.MuiPaper-root {
+  background-color: transparent !important;
+}
+.app-header .hamburger-inner,
+.app-header .hamburger-inner:after,
+.app-header .hamburger-inner:before {
+  background: #ffffff !important;
+}
+.TextFieldView {
+  border: #ffffff !important;
+  padding: 20px;
+}
+.TextFieldView:hover {
+  border: #ffffff !important;
+}
+
+@media only screen and (min-width: 1100px) {
+  .app-content {
+    padding-top: 20px !important;
+  }
+  .mainTitle {
+    font-size: 44px;
+  }
+  .subTitle {
+    font-size: 24px;
+  }
+  .PlayerRSWP {
+    width: 100% !important;
+    padding-left: 280px;
+    // background-color: #18212f !important;
+  }
+  .crisp-client .cc-kv6t .cc-1xry .cc-unoo .cc-7doi .cc-1ada {
+    z-index: 2 !important;
+    display: block !important;
+    bottom: 80px !important;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .crisp-client .cc-kv6t .cc-1xry .cc-unoo {
+    bottom: 130px !important;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .searchBar {
+    width: 330px !important;
+  }
+}
+@media only screen and (min-width: 376px) and (max-width: 768px) {
+  .searchBar {
+    width: 630px !important;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .searchBar {
+    width: 700px !important;
+  }
+}
+
+.MuiMenu-list {
+  background-color: #18212f;
+}
+.popperview {
+  position: static !important;
+  transform: none !important;
+}
+.signup-button {
+  background-color: rgb(38, 55, 84) !important;
+}
+.PlayerRSWP {
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  // background-color: #18212f !important;
+}
+
+.wrapText {
+  overflow-wrap: break-word !important;
+  word-wrap: break-word !important;
+  hyphens: auto !important;
+}

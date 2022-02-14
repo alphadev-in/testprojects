@@ -1,0 +1,20 @@
+#footer .main {
+  height: 300px;
+}
+
+#footer .footer-main {
+  background-color: #000000;
+}
+
+#footer .bottom {
+  height: 50px;
+}
+
+#footer .linkColor {
+  color: #008ACA !important;
+}
+
+#footer .linkColorBottom {
+  color: #ffffff !important;
+}
+/*# sourceMappingURL=footer.css.map */

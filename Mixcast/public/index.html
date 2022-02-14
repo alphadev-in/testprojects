@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- <base href="%PUBLIC_URL%/"> -->
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favcon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <script
+      data-name="BMC-Widget"
+      data-cfasync="false"
+      src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+      data-id="themixcast"
+      data-description="Support me on Buy me a coffee!"
+      data-message="Thanks for supporting continued development of The Mixcast!"
+      data-color="#71b292"
+      data-position="Left"
+      data-x_margin="18"
+      data-y_margin="36"
+    ></script>
+    <!-- <script
+      src="https://api.memberstack.io/static/memberstack.js?custom"
+      data-memberstack-id="b67a983f60541fcf7983ee487e933648"
+    ></script> -->
+    <!-- <script type="text/javascript">
+      window.$crisp = [];
+      window.CRISP_WEBSITE_ID = 'dd84948c-ca66-4c37-b05b-96ea50229948';
+      (function () {
+        d = document;
+        s = d.createElement('script');
+        s.src = 'https://client.crisp.chat/l.js';
+        s.async = 1;
+        d.getElementsByTagName('head')[0].appendChild(s);
+      })();
+    </script> -->
+    <script>
+      (function (apiKey) {
+        (function (p, e, n, d, o) {
+          var v, w, x, y, z;
+          o = p[d] = p[d] || {};
+          o._q = o._q || [];
+          v = ['initialize', 'identify', 'updateOptions', 'pageLoad', 'track'];
+          for (w = 0, x = v.length; w < x; ++w)
+            (function (m) {
+              o[m] =
+                o[m] ||
+                function () {
+                  o._q[m === v[0] ? 'unshift' : 'push'](
+                    [m].concat([].slice.call(arguments, 0))
+                  );
+                };
+            })(v[w]);
+          y = e.createElement(n);
+          y.async = !0;
+          y.src = 'https://cdn.pendo.io/agent/static/' + apiKey + '/pendo.js';
+          z = e.getElementsByTagName(n)[0];
+          z.parentNode.insertBefore(y, z);
+        })(window, document, 'script', 'pendo');
+
+        // Call this whenever information about your visitors becomes available
+        // Please use Strings, Numbers, or Bools for value types.
+        pendo.initialize({
+          visitor: {
+            id: 'VISITOR-UNIQUE-ID' // Required if user is logged in
+            // email:        // Recommended if using Pendo Feedback, or NPS Email
+            // full_name:    // Recommended if using Pendo Feedback
+            // role:         // Optional
+
+            // You can add any additional visitor level key-values here,
+            // as long as it's not one of the above reserved names.
+          },
+
+          account: {
+            id: 'ACCOUNT-UNIQUE-ID' // Highly recommended
+            // name:         // Optional
+            // is_paying:    // Recommended if using Pendo Feedback
+            // monthly_value:// Recommended if using Pendo Feedback
+            // planLevel:    // Optional
+            // planPrice:    // Optional
+            // creationDate: // Optional
+
+            // You can add any additional account level key-values here,
+            // as long as it's not one of the above reserved names.
+          }
+        });
+      })('e190958b-eeb2-449c-4f35-6a6427bd9c18');
+    </script>
+
+    <!--Memberstack to Crisp-->
+
+    <script>
+      MemberStack.onReady.then(function (member) {
+        var email = member['email'];
+        var name = member['name'];
+        if (member.loggedIn) {
+          try {
+            $crisp.push(['set', 'user:email', [email]]);
+            $crisp.push(['set', 'user:nickname', [name]]);
+          } catch (e) {}
+        }
+      });
+    </script>
+    <script>
+      ms_settings = {
+        session: 2 //hours
+      };
+    </script>
+    <script type="text/javascript">
+      (window.heap = window.heap || []),
+        (heap.load = function (e, t) {
+          (window.heap.appid = e), (window.heap.config = t = t || {});
+          var r = document.createElement('script');
+          (r.type = 'text/javascript'),
+            (r.async = !0),
+            (r.src = 'https://cdn.heapanalytics.com/js/heap-' + e + '.js');
+          var a = document.getElementsByTagName('script')[0];
+          a.parentNode.insertBefore(r, a);
+          for (
+            var n = function (e) {
+                return function () {
+                  heap.push(
+                    [e].concat(Array.prototype.slice.call(arguments, 0))
+                  );
+                };
+              },
+              p = [
+                'addEventProperties',
+                'addUserProperties',
+                'clearEventProperties',
+                'identify',
+                'resetIdentity',
+                'removeEventProperty',
+                'setEventProperties',
+                'track',
+                'unsetEventProperty'
+              ],
+              o = 0;
+            o < p.length;
+            o++
+          )
+            heap[p[o]] = n(p[o]);
+        });
+      heap.load('993990028');
+    </script>
+
+    <meta name="description" content="Mixcast App." />
+    <link rel="apple-touch-icon" href="favcon.png" />
+    <!--
+        manifest.json provides metadata used when your web app is installed on a
+        user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+      -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+        Notice the use of %PUBLIC_URL% in the tags above.
+        It will be replaced with the URL of the `public` folder during the build.
+        Only files inside the `public` folder can be referenced from the HTML.
+
+        Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+        work correctly both with client-side routing and a non-root public URL.
+        Learn how to configure a non-root public URL by running `npm run build`.
+      -->
+    <title>The Mixcast</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root" />
+    <!--
+    This HTML file is a template.
+    If you open it directly in the browser, you will see an empty page.
+
+    You can add webfonts, meta tags, or analytics to this file.
+    The build step will place the bundled scripts into the <body> tag.
+
+    To begin the development, run `npm start` or `yarn start`.
+    To create a production bundle, use `npm run build` or `yarn build`.
+  --></body>
+</html>
